@@ -1,0 +1,54 @@
+--- sending ---
+{
+ "tkml" : "<tkml version=\"1.0\">
+ <achieves>say hello</achieves>
+
+ <say recognise=\"greeting\">Hello</say>
+
+<say>Bye</say>
+</tkml>",
+ "action" : "upload",
+ "version" : "1.0"
+}
+---
+--- recieved ---
+{
+ "responseCode" : "200",
+ "sayThis" : "",
+ "version" : "1.0"
+}
+---
+--- sending ---
+{
+ "action" : "start",
+ "version" : "1.0"
+}
+---
+--- recieved ---
+{
+ "responseCode" : "200",
+ "sayThis" : "Hello",
+ "g2" : "",
+ "g1" : "greeting",
+ "version" : "1.0"
+}
+---
+db: User said:Hello (g1 is greeting, g2 is null)
+--- sending ---
+{
+ "action" : "heard",
+ "grammar" : "greeting",
+ "cuisine" : "mexican"
+ "version" : "1.0"
+}
+---
+--- recieved ---
+{
+ "responseCode" : "200",
+ "sayThis" : "Bye",
+ "g2" : "",
+ "g1" : "",
+ "version" : "1.0"
+}
+---
+db: g1&g2 are null - finish now.

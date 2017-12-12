@@ -1,0 +1,117 @@
+<tkml version="1.0">
+  <achieves> interview Peter Wallis</achieves>
+
+<plan achieves="discussMyUnderstanding">
+<say recognise="Yes|No" resultId="IUnderstand">
+Do I understand what I'm saying?
+</say>
+<if cond="IUnderstand==Yes">
+ Smarter than your average chat-bot.
+ <success/>
+</if>
+<say recognise="Yes|No|socialSkills" resultId="IUnderstandABit">
+ But I understand enough to participate in this conversation. I understand
+ something surely?
+</say>
+<!-- we'll wait here until he stops talking -->
+
+<if cond="IUnderstandABit==socialSkills">
+  Social skills are things like turn taking?
+</if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</plan> <!-- discuss my understanding -->
+
+<plan achieves="discussAI">
+<say recognise="turing|any" resultId="X">
+ AI is smart though?
+ </say>
+ 
+<if cond="X==turing">
+ <say recognise="any">
+  Could you summarise the Turing Test and perhaps Turing's motivation for it
+  </say>
+</if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</plan> <!-- discuss AI -->
+
+<plan achieves="discussUnderstanding">
+<say recognise="Yes|No" resultId="done">
+ I was hoping to talk about meaning but we seem to have run out of time.
+ Can we leave that until next time?
+</say>
+<if cond="done==Yes">
+ Okay.
+</if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</plan> <!-- discuss understanding in general -->
+
+<plan achieves="closing" trigger="bye">
+ Peter Wallis, Thank you.
+<exit/>
+</plan>
+
+<!-- the action starts here -->
+
+<say recognise="hello">
+ The government wants the UK to lead the world in developing practical uses for
+ AI and related technology.  The Centre for Date Ethics and Innovation anounced
+ in the Autumn budget will set ethical standards of AI development,  but where
+ is this technology going and what might we expect from the field over the next 
+ 20 years?
+ I am in Sheffield talking to Peter Wallis who developed my AI engine.
+ Good morning.
+</say>
+
+<achieve goal="discussMyUnderstanding"/>
+
+<achieve goal="discussAI" />
+
+<achieve goal="discussUnderstanding" />
+
+Dr Wallis.  Thank you very much.
+
+</tkml>

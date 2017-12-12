@@ -1,0 +1,9 @@
+hello	.*(Hello|hello|Hi|hi|Good morning|good morning|morning).*
+any	.*
+bye	.*(Bye|bye|Good bye|good bye).*
+Yes	.*(Yes|yes|ok|Ok|Okay|okay|Sure|sure).*
+No	.*(No|no|Not|not|Nope|nope).*
+nothing	.*(nothing|Nothing|not a lot|hardly anything).*
+everything	.*(Everything|everything|perfect|all of it).*
+socialSkills	.*(social).*
+turing	.*(turing test|Turing|turing).*

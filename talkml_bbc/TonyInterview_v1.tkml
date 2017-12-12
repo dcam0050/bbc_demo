@@ -1,0 +1,41 @@
+<tkml version="1.0">
+  <achieves> be Mishal</achieves>
+
+  <plan achieves="sayGoodbye" trigger="bye">
+  Tony Prescott.  Thank you very much.
+  <exit/>
+  </plan>
+
+
+
+<!-- the action starts here -->
+<say recognise="tony" resultId="X">
+For weeks a team of researchers at the University of Sheffield have been
+ working to create me, a synthetic Mishal, to discover if the Today Programme
+ has any need for human presenters.
+</say>
+
+<!-- Mishal will introduce him -->
+
+<say recognise="any">
+  How was I created?
+</say>
+
+<say recognise="any">
+  What have I been taught to do?
+</say>
+
+<say recognise="any">
+ Perhaps you could say something about my limitations.
+</say>
+
+<say recognise="any">
+ How do I know what questions to ask?
+</say>
+
+<say recognise="any">
+ Do I have emotions?
+</say>
+
+<say>Tony Prescott, Thank you.</say>
+</tkml>

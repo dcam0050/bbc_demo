@@ -1,0 +1,10 @@
+<tkml version="1.0">
+ <achieves>say hello</achieves>
+
+ <say recognise="greet">Starting interaction</say>
+ <say recognise="greet">Hello everyone! <emotion>evil</emotion> <gesture>fast_long_wave</gesture> How are you all?</say> 
+ <say recognise="greet">My name is ayCub</say>
+
+
+<say>Bye</say>
+</tkml>

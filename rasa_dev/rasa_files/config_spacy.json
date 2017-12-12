@@ -1,0 +1,5 @@
+{
+	"pipeline" : "spacy_sklearn",
+	"path" : "/home/icub/user_files/BBC_Demo/rasa_development/rasa_files/models",
+	"data" : "/home/icub/user_files/BBC_Demo/rasa_development/rasa_files/demo-rasa.json"
+}

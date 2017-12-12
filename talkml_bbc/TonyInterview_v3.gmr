@@ -1,0 +1,26 @@
+tony	.*(Tony|tony|prescott).*
+bye	.*(bye|thankyou).*
+any	.*
+moveOn	(skip).*
+example	.*(example).*
+grasp	.*(grasp)|(hand).*
+understand	.*(understand).*
+learning	.*(learn| remember).*
+context	.*(context).*
+boardGames	.*(board|alpha|chess).*
+italy	.*(Italy|italy).*
+yes	.*(yes|okay|yep|sure).*
+Sheffield	.*(sheffield).*
+aName	.*(peter|tony|daniel).*
+agent	.*(agent|agents).*
+robots	.*(robots).*
+beliefs	.*(beliefs).*
+todayProgram	.*(today * program| today * programme).*
+interviews	.*(interviews).*
+direct	.*(direct).*
+data	.*(data).*
+chunks	.*(chunks).*
+head	.*(head).*
+general	.*(general).*
+matter	.*(matter).*
+narrow	.*(narrow).*

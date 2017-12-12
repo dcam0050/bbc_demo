@@ -1,0 +1,133 @@
+<tkml version="1.0">
+  <achieves> be Mishal</achieves>
+
+  <plan achieves="sayGoodbye" trigger="bye">
+  Tony Prescott.  Thank you very much.
+  <exit/>
+  </plan>
+
+<plan achieves="n1" trigger="understand">
+  I 'understand' enough to hold this conversation though.
+</plan>
+
+<plan achieves="n2" trigger="context">
+  Could you tell us perhaps why accounting for 'context' is so hard.
+</plan>
+
+<plan achieves="n3" trigger="learnGmr">
+  In discussions of artificial intelligence, I am told that machine learning comes up a lot. Can machines like me learn?
+</plan>
+
+<plan achieves="n4" trigger="grasp">
+ Yes, I can reach and touch but Im not very good at 'grasping' yet.
+</plan>
+
+<plan achieves="n5" trigger="boardGames">
+  I can remember things in great detail, but it is hard to figure out how to use that information.
+</plan>
+
+<plan achieves="brexitDig" trigger="italy">
+ <say recognise="Sheffield|yes" resultId="imItalian">
+   So I'm Italian?
+ </say>
+ <if cond="imItalian==Sheffield">
+  That's good.  I like Sheffield.
+ <elseif cond="imItalian==yes"/>
+   I still like being in Sheffield.
+ </if>
+ <say recognise="aName" resultId="mindDesigner">
+  Ok, that is how my body was created, but what about my mind?
+ </say>
+ <if cond="mindDesigner==aName">
+ <say recognise="nomatchgrammar">
+  So mindDesigner is a mind maker? Cool.
+ </say>
+ </if>
+</plan>
+
+<plan achieves="mi5" trigger="agent">
+<say recognise="nomatchgrammar">
+ So Im an 'agent' too. Perhaps I can get a job at M.I.6?
+ </say>
+</plan>
+
+<plan achieves="whatIdo" trigger="robots">
+ <say recognise="nomatchgrammar"> Everyone wants 'robots', we are in demand. What am I able to do?</say>
+</plan>
+
+<plan achieves="a1" trigger="todayProgram">
+<say recognise="interviews|direct" resultId="mishal">
+Great. That sounds hard. How do you make a program for that?
+</say>
+<if cond="mishal==interviews">
+<say recognise="interviews|direct" resultId="mishal">
+I guess she is very polite to them.
+</say>
+</if>
+<if cond="mishal==direct">
+Ouch. That sounds painful. Lets move on. We haven't got very much time.
+</if>
+<achieve goal="discussLimits"/>
+</plan>
+
+<plan achieves="discussLimits">
+<say recognise="data|chunks|head|beliefs" resultId="lmt">
+What are my limitations? 
+</say>
+<if cond="lmt==data">
+<say recognise="data|chunks|head|beliefs" resultId="lmt">
+  Really? So Tony, tell me how do I know which question to ask?
+</say> 
+</if>
+<if cond="lmt==chunks">
+  <say recognise="data|chunks|head|beliefs" resultId="lmt">
+    Is that how Michelle works too?
+  </say>
+</if>
+<if cond="lmt==head">
+  <say recognise="data|chunks|head|beliefs" resultId="lmt">
+ You mean things like emotions?
+ </say>
+</if>
+<if cond="lmt==beliefs">
+  <say recognise="matter" resultId="lmt">
+  Now you are telling me I don't have emotions. More bad news.
+  </say>
+</if>
+</plan>
+
+<plan achieves="generalAI" trigger="general">
+ <say recognise="narrow" resultId="nrw">
+   'General' AI, huh, I'm a peaceful 'robot'. I support the campaign against killer 'robots'.
+ </say>
+</plan>
+
+
+<!-- the action starts here -->
+<say recognise="tony" resultId="X">
+For weeks a team of researchers at the University of Sheffield have been
+ working to create me, a synthetic Michelle, to discover if the Today Programme
+ has any need for human presenters.
+</say>
+
+<!-- Mishal will introduce him -->
+
+<say recognise="moveOn">
+  So Tony, can you tell me how was I created?
+</say>
+
+<say recognise="movingOn">
+  Do you think you will one day be able to program me to be as smart as the
+  real Michelle?
+</say>
+
+<say>
+ Tony I have to say it has been most interesting talking to you. However, now I know I
+ have no emotions so perhaps I wasn't interested at all.
+</say>
+<say>
+ Anyway, thanks for coming in. This job of radio presenter
+ isn't so hard, perhaps they don't have 'general' AI either! Goodbye <gesture>fast_long_wave</gesture> 
+</say>
+
+</tkml>

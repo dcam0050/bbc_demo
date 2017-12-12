@@ -1,0 +1,56 @@
+<tkml version="1.0">
+  <achieves> be Mishal</achieves>
+
+  <plan achieves="sayGoodbye" trigger="bye">
+  Tony Prescott.  Thank you very much.
+  <exit/>
+  </plan>
+
+<plan achieves="n1" trigger="understand">
+  I 'understand' enough to hold this conversation though.
+</plan>
+
+<plan achieves="n2" trigger="context">
+  Could you tell us perhaps why accounting for 'context' is so hard.
+</plan>
+
+<plan achieves="n3" trigger="learning">
+  In discussions of artificial intelligence, I am told that machine learning comes up a lot. Can machines like me learn?
+</plan>
+
+<plan achieves="n4" trigger="boardGames">
+  I can remember things in great detail, but it is hard to figure out how to use that information.
+</plan>
+
+
+<!-- the action starts here -->
+<say recognise="tony" resultId="X">
+For weeks a team of researchers at the University of Sheffield have been
+ working to create me, a synthetic Mishal, to discover if the Today Programme
+ has any need for human presenters. <emotion>evil</emotion> <gesture>fast_long_wave</gesture> Good morning.
+</say>
+
+<!-- Mishal will introduce him -->
+
+<say recognise="moveOn">
+  How was I created?
+</say>
+
+<say recognise="moveOn">
+  What have I been taught to do?
+</say>
+
+<say recognise="moveOn">
+ Perhaps you could say something about my limitations.
+</say>
+
+<say recognise="moveOn">
+ How do I know what questions to ask?
+</say>
+
+<say recognise="moveOn">
+ Do I have emotions?
+</say>
+
+<say>Tony Prescott, Thank you.</say>
+</tkml>

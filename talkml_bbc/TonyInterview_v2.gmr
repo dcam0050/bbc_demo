@@ -1,0 +1,11 @@
+tony	.*(Tony|tony|prescott).*
+bye	.*(bye|thank you).*
+any	.*
+moveOn	.*(skip).*
+example	.*(example).*
+grasp	.*(grasp|hand).*
+understand	.*(understand).*
+learning	.*(learn| remember).*
+context	.*(context).*
+boardGames	.*(board|alpha|chess).*
+intelligence	.*(narrow*intelligence|general*intelligence).*
